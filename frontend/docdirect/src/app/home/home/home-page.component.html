@@ -1,15 +1,48 @@
-<div class="main flex"> <!-- background image-->
-    <div>
-        <h1>Connect to Direct</h1>
-        <p>
-            Welome to Docdirect where we help
-            you with any healthcare inquiry or
-            appointment using our ai chat and we will direct it to you!
-        </p>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for a doctor, service, or location...">
-            <button>Search</button>
-
+<div class="main flex flex-row h-screen w-screen px-24"> <!-- background image-->
+    <div class="flex flex-col items-center justify-center w-1/2">
+        <div class="flex flex-col gap-7">
+            <p class="text-[2.875rem] w-9/12 font-bold">Your <span class="text-[2.875rem] font-bold">trusted partner</span> in digital healthcare</p>
+            <p class="w-4/5"><span>Empowering Your Health at Every Step.</span> Experience personalized medical care from the comfort of your home. Connect with <span>certified doctors</span>, or manage prescriptions, and schedule appointments with ease. Ready to take control of your health?<span> Get Started</span>  or Book an Appointment today.</p>
+            <div class="flex flex-col space-y-3 ">
+                <button class=" text-white rounded-2xl font-bold">Book an appointment ></button>
+                <div class="flex items-center space-x-3 px-6 py-2 mx-5 bg-white shadow-lg w-[18.5rem] rounded-2xl">
+                    <img class="w-[1.75rem] h-[1.75rem]"  src="https://i.imgur.com/gEwb0i4.png" alt="">
+                    <p>Easy Appointment Booking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col w-1/2 justify-center items-center">
+        <!-- chat gpt chat -->
+        <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-6 flex flex-col h-[32rem]">
+            <div class="flex-1 overflow-y-auto mb-4 space-y-3" id="chat-messages">
+                <!-- Example chat bubbles -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 text-gray-800 px-4 py-2 rounded-2xl rounded-bl-none max-w-xs">
+                        Hello! How can I assist you today?
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <div class="bg-blue-500 text-white px-4 py-2 rounded-2xl rounded-br-none max-w-xs">
+                        I want to book an appointment.
+                    </div>
+                </div>
+                <!-- More messages will appear here -->
+            </div>
+            <form class="flex space-x-2" autocomplete="off">
+                <input
+                    type="text"
+                    class="flex-1 border border-gray-300 rounded-2xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Type your message..."
+                />
+                <button
+                    type="submit"
+                    class="bg-blue-500 text-white px-5 py-2 rounded-2xl font-bold hover:bg-blue-600 transition"
+                >
+                    Send
+                </button>
+            </form>
         </div>
     </div>
 </div>
+

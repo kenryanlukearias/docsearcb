@@ -1,0 +1,27 @@
+span {
+    background: linear-gradient(90deg, #349DD0 0%, #88D8FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+p {
+    color: #3D3D3D;
+}
+
+button {
+    height: 4.25rem;
+    width: 21.5rem;
+    background-color: var(--primary-color2);
+    background: linear-gradient(90deg, #349DD0 0%, #88D8FF 100%);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #88D8FF 0%, #349DD0 100%);
+    transition: background 1s ease;
+
+}
