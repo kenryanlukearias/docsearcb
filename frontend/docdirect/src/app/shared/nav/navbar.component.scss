@@ -1,0 +1,23 @@
+li, h1, span {
+    color: var(--primary-color2);
+}
+
+li:hover {
+    cursor: pointer;
+    color: var(--background-color);
+    transition: color 0.3s ease-in-out;
+}
+
+svg {
+    fill: var(--primary-color2);
+    stroke: var(--primary-color2);
+}
+
+svg:hover {
+    cursor: pointer;
+    stroke: var(--background-color);
+    fill: var(--background-color);
+    transition: fill 0.3s ease-in-out;
+    transition: stroke 0.3s ease-in-out;
+    
+}

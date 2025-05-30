@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//  Creating custom theme colors 
+:root {
+    --primary-color1: #034172;
+    --primary-color2: #52DEA0;
+    --background-color: #FFFFFF;
+    --text-color1: #C0CFDC;
+    --text-color2: #52DEA0;
+
+    --error-color: #ff4d4f;
+    --success-color: #52c41a;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
