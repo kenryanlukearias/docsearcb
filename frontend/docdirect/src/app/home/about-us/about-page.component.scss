@@ -1,0 +1,44 @@
+span {
+    background: linear-gradient(90deg, #349DD0 0%, #88D8FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+p {
+    color: var(--text-color1);
+}
+
+.text-color {
+    color: var(--text-color1)
+}
+
+h1 {
+    color: var(--text-color2);
+    font-weight: bold;
+}
+
+.cards {
+    background-color: white;
+}
+
+.brdr {
+    border: 1px solid var(--primary-color2);
+}
+
+.abt-text {
+    background: linear-gradient(90deg, #349DD0 0%, #88D8FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.abt-btn {
+    background-color: var(--primary-color2);
+    color: white;
+}
+
+.abt-btn:hover {
+    background-color: var(--text-color2);
+    transition: background-color 0.3s ease-in-out;
+}
