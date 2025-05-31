@@ -5,11 +5,11 @@
     </div>
     <div class="hidden lg:flex">
         <ul class="flex justify-center space-x-[2.5rem] text-white text-[1rem]">
-            <li routerLink="" >Home</li>
-            <li routerLink="" >Services</li>
-            <li routerLink="" >Find Doctors</li>
-            <li routerLink="" >About Us</li>
-            <li routerLink="" >Contact Us</li>
+            <li [routerLink]="'/home'" fragment="home">Home</li>
+            <li [routerLink]="'/home'" fragment="services">Services</li>
+            <li [routerLink]="'/home'" fragment="doctors">Find Doctors</li>
+            <li [routerLink]="'/home'" fragment="about-us">About Us</li>
+            <li [routerLink]="'/home'" fragment="contact-us">Contact Us</li>
         </ul>
     </div>
     <div class="flex items-center justify-center space-x-10">

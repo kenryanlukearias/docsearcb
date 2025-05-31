@@ -22,10 +22,10 @@
     <!-- menu options -->
     <div>
         <h1>Navigate</h1>
-        <li><a routerLink="home" >Home</a></li>
-        <li><a routerLink="services" >Achievements</a></li>
-        <li><a routerLink="find-doctors" >Tutors</a></li>
-        <li><a routerLink="about-us" >Pricings</a></li>
-        <li><a routerLink="contact-us">Lessons</a></li>
+        <li [routerLink]="'/home'" fragment="home">Home</li>
+        <li [routerLink]="'/home'" fragment="services">Services</li>
+        <li [routerLink]="'/home'" fragment="doctors">Find Doctors</li>
+        <li [routerLink]="'/home'" fragment="about-us">About Us</li>
+        <li [routerLink]="'/home'" fragment="contact-us">Contact Us</li>
     </div>
 </ul>

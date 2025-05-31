@@ -18,6 +18,10 @@
     --success-color: #52c41a;
 }
 
+body,html {
+    scroll-behavior: smooth;
+}
+
 * {
       font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
