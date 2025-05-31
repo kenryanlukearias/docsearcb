@@ -19,10 +19,10 @@
 </div>
 
 <!-- Drawer -->
-<div class="drawer h-screen" [class.open]="isDrawerOpen">
-  <div class="drawer-header">
-    <h3>Menu</h3>
+<div class="drawer" [class.open]="isDrawerOpen">
+  <div class="drawer-header  bg-white">
+    <h3 class="bg-white">Menu</h3>
     <button (click)="toggleDrawer()">✕</button>
   </div>
-  <app-drawer></app-drawer>
+  <app-drawer class="bg-white"></app-drawer>
 </div>
