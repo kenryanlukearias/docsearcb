@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { DrawerComponent } from "../drawer/drawer.component";
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [DrawerComponent],
+  imports: [DrawerComponent, RouterLink],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

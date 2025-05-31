@@ -13,12 +13,12 @@ export const routes: Routes = [
     },
 
     {
-        path: 'about',
-        loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+        path: '',
+        loadChildren: () => import('./log-reg/log-reg.module').then(m => m.LogRegModule)
     },
 
     {
-        path: 'contact',
-        loadChildren: () => import('./contact-page/contact-page.module').then(m => m.ContactPageModule)
-    }
+        path: '',
+        loadChildren: () => import('./appointment/appointment.module').then(m => m.AppointmentModule)
+    },
 ];

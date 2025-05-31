@@ -1,0 +1,31 @@
+.text-color {
+    color: var(--text-color1);
+}
+
+.masters-header {
+    background: linear-gradient(90deg, #349DD0 0%, #88D8FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.masters-sub {
+    color: #3D3D3D;
+}
+
+.bg-rawr {
+    background: linear-gradient(90deg, #349DD0 0%, #88D8FF 100%);
+}
+
+button {
+    background-color: white;
+    color: var(--text-color2);
+}
+
+button:hover {
+    background-color: var(--text-color2);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
+}

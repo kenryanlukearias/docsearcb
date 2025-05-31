@@ -1,0 +1,42 @@
+<div class="w-full min-h-[80vh] flex justify-center items-start py-10 px-6">
+  <div class="flex flex-col lg:flex-row w-full max-w-screen-xl bg-white rounded-2xl shadow-xl overflow-hidden">
+
+    <!-- Calendar -->
+    <div class="flex-1 p-8">
+      <h2 class="text-5xl font-light text-center mb-10">JUNE</h2>
+      <div class="grid grid-cols-7 gap-y-6 text-center text-lg font-medium text-black">
+
+        <!-- Empty slots -->
+        <ng-container *ngFor="let blank of blanks">
+          <div></div>
+        </ng-container>
+
+        <!-- Days -->
+        <ng-container *ngFor="let day of days">
+            <div
+                class="w-14 h-14 flex items-center justify-center mx-auto rounded-full cursor-pointer transition-all duration-300"
+                [ngClass]="{ 'bg-blue-300 text-white font-bold': day === selectedDay }"
+                (click)="selectDay(day)"
+            >
+                {{ day }}
+            </div>
+        </ng-container>
+
+      </div>
+    </div>
+
+    <!-- Reminder Box -->
+    <div class="flex-1 bg-blue-100 p-10 rounded-r-2xl flex flex-col gap-4">
+      <h3 class="text-xl font-semibold">
+        Reminder: <span class="text-sky-600 font-bold">FRIDAY, 6 . 2025</span>
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md text-base leading-7 space-y-1">
+        <p><strong>Patient:</strong> Gabriel Jude Advincula</p>
+        <p><strong>Doctor:</strong> Sarah Johnson</p>
+        <p><strong>Reason:</strong> Family Check Up</p>
+        <p><strong>Description:</strong> “Hello Doctor, I want to have check up for my whole family because of the sudden change of weather”</p>
+      </div>
+    </div>
+
+  </div>
+</div>

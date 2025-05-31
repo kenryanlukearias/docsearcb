@@ -1,0 +1,57 @@
+<body class="h-screen lg:overflow-hidden bg-white">
+  <!-- Logo -->
+  <div class="absolute top-6 left-6 flex items-center space-x-2 z-10">
+    <img class="w-[4rem] h-[4rem]" src="https://i.imgur.com/WVJnWqs.png" alt="Logo" />
+    <h1 class="text-[1.5rem] font-bold text-[#4db8ff]">DOCDIRECT</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex h-full items-center justify-center px-8">
+    <div class="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl gap-12">
+
+      <!-- Left Section -->
+      <div class="flex-1 mt-80 lg:mt-0">
+        <h1 class=" text-4xl lg:text-6xl  font-semibold text-gray-900 leading-tight">
+          Your <span class="text-gradient font-bold">trusted partner</span><br />
+          in digital healthcare.
+        </h1>
+        <p class="text-sm text-gray-600 mt-4 m">
+          <span class="text-[#0077b6] font-medium">Empowering Your Health at Every Step.</span>
+          Experience personalized medical care from the comfort of your home. Connect with
+          <span class="font-semibold">certified doctors</span>, manage prescriptions, and schedule appointments with ease.
+          Ready to take control of your health? <a href="#" class="text-[#4db8ff] underline">Get Started</a> today.
+        </p>
+      </div>
+
+      <!-- Right Section -->
+      <div class="flex-1 flex flex-col items-center justify-center">
+        <div class="bg-[#cceeff] p-8 rounded-lg w-80 shadow-md">
+          <h2 class="text-center text-xl font-semibold text-gray-800 mb-6">Register</h2>
+
+          <label class="block text-sm mb-1">Full Name</label>
+          <input type="text" placeholder="Enter Your Full Name" class="w-full p-2 mb-3 rounded border" />
+
+          <label class="block text-sm mb-1">Email Address</label>
+          <input type="email" placeholder="Enter Your Email" class="w-full p-2 mb-3 rounded border" />
+
+          <label class="block text-sm mb-1">Password</label>
+          <input type="password" placeholder="Create a Password" class="w-full p-2 mb-3 rounded border" />
+
+          <label class="block text-sm mb-1">Confirm Password</label>
+          <input type="password" placeholder="Confirm Your Password" class="w-full p-2 mb-5 rounded border" />
+
+          <button class="w-full bg-gray-800 text-white py-2 rounded shadow hover:bg-gray-900">Register</button>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600 mt-4">
+            Already have an account? <a href="/user-login" class="text-[#4db8ff] underline">Login</a>
+          </p>
+          <button onclick="window.location.href='/'" class="mt-4 w-full bg-[#4db8ff] text-white py-2 rounded shadow hover:bg-[#0099ff]">
+            Go to Home
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
