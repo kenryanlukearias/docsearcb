@@ -1,5 +1,5 @@
-<div class="main flex flex-row h-screen w-screen px-24">
-    <div class="flex flex-col items-center justify-center">
+<div class="main hidden lg:flex flex-row h-screen w-screen px-24">
+    <div class="flex flex-col items-center justify-center w-1/2">
         <div class="flex flex-col gap-7">
             <p class="text-[2.875rem] w-9/12 font-bold">Your <span class="text-[2.875rem] font-bold">trusted partner</span> in digital healthcare</p>
             <p class="w-4/5"><span>Empowering Your Health at Every Step.</span> Experience personalized medical care from the comfort of your home. Connect with <span>certified doctors</span>, or manage prescriptions, and schedule appointments with ease. Ready to take control of your health?<span> Get Started</span>  or Book an Appointment today.</p>
@@ -46,3 +46,52 @@
     </div>
 </div>
 
+<!-- Mobile Display -->
+<div class="mbl-main flex flex-col lg:hidden">
+    <div class="">
+        <div class="flex flex-col items-center justify-center mt-60 gap-10">
+            <p class="text-[2.875rem] w-9/12 font-bold">Your <span class="text-[2.875rem] font-bold">trusted partner</span> in digital healthcare</p>
+            <p class="w-4/5 text-lg"><span class="text-lg">Empowering Your Health at Every Step.</span> Experience personalized medical care from the comfort of your home. Connect with <span class="text-lg">certified doctors</span>, or manage prescriptions, and schedule appointments with ease. Ready to take control of your health?<span class="text-lg"> Get Started</span>  or Book an Appointment today.</p>
+            <div class="flex flex-col space-y-3 ">
+                <button class=" text-white rounded-2xl font-bold">Book an appointment ></button>
+                <div class="flex items-center space-x-3 px-6 py-2 mx-5 bg-white shadow-lg w-[18.5rem] rounded-2xl">
+                    <img class="w-[1.75rem] h-[1.75rem]"  src="https://i.imgur.com/gEwb0i4.png" alt="">
+                    <p>Easy Appointment Booking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center w-full mt-8 mb-8">
+        <!-- chat gpt chat -->
+        <div class="w-full bg-white rounded-2xl shadow-lg px-10 flex flex-col h-[28rem] max-w-full mx-2">
+            <div class="flex-1 overflow-y-auto mb-3 space-y-2" id="chat-messages">
+                <!-- Example chat bubbles -->
+                <div class="flex justify-start">
+                    <div class="bg-gray-100 text-gray-800 px-3 py-2 rounded-2xl rounded-bl-none max-w-[80%] text-sm">
+                        Hello! How can I assist you today?
+                    </div>
+                </div>
+                <div class="flex justify-end">
+                    <div class="bg-blue-500 text-white px-3 py-2 rounded-2xl rounded-br-none max-w-[80%] text-sm">
+                        I want to book an appointment.
+                    </div>
+                </div>
+                <!-- More messages will appear here -->
+            </div>
+            <form class="flex space-x-2" autocomplete="off">
+                <input
+                    type="text"
+                    class="flex-1 border border-gray-300 rounded-2xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm"
+                    placeholder="Type your message..."
+                />
+                <button
+                    type="submit"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-2xl font-bold hover:bg-blue-600 transition text-sm"
+                >
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

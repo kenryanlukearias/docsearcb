@@ -1,0 +1,23 @@
+.bg-gradient {
+    background: linear-gradient(180deg, #66B8E0, #B7E7FF);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #092438, #036495);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    @apply text-lg
+}
+
+h1 {
+    background: linear-gradient(90deg, #66B8E0, 30% , #037AB4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

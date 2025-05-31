@@ -1,4 +1,4 @@
-<div class="main flex w-screen h-screen justify-center items-center">
+<div class="main hidden lg:flex w-screen h-screen justify-center items-center">
     <div>
         <div class="flex flex-col text-center items-center gap-5 mb-10">
             <p class="text-4xl font-bold">Top <span class="font-bold">Services</span> we offer </p>
@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div class="h-5/6 w-screen flex justify-center items-center">
+<div class="h-5/6 w-screen hidden lg:flex justify-center items-center">
     <div class="brdr flex flex-col gap-7 h-[34.5rem] py-14 px-10 w-[72.875rem]">
         <div class="flex items-center  justify-center gap-1">
             <p class="abt-text text-[2rem] font-bold">DOCDIRECT:</p>
@@ -49,3 +49,48 @@
         </div>
     </div>
 </div>
+
+<!-- Mobile Display -->
+<div class="flex flex-col lg:hidden w-full min-h-screen bg-white">
+    <!-- Top Services Section -->
+    <div class="flex flex-col items-center px-4 py-8">
+        <p class="text-2xl font-bold text-center mb-3">Top <span class="font-bold">Services</span> we offer</p>
+        <p class="text-color text-center text-base mb-6">In today’s fast-paced world, your health deserves the utmost attention and convenience. That’s why HealNet offers a suite of integrated services designed to cater to your healthcare needs digitally:</p>
+        <div class="flex flex-col gap-6 w-full">
+            <div class="cards w-full">
+                <div class="brdr flex flex-col items-center px-4 py-4 shadow-2xl gap-2 rounded-2xl">
+                    <img class="w-12 h-12 mb-2" src="https://i.imgur.com/pbMI07v.png" alt="">
+                    <h1 class="font-semibold text-lg">AI Inquiry Chat</h1>
+                    <p class="text-sm text-center">An AI inquiry chat for medical questions is a digital tool that uses artificial intelligence to provide quick, confidential answers about symptoms, treatments, medications, and healthcare services, guiding users on next steps or when to see a professional.</p>
+                </div>
+            </div>
+            <div class="cards w-full">
+                <div class="brdr flex flex-col items-center px-4 py-4 shadow-2xl gap-2 rounded-2xl">
+                    <img class="w-12 h-12 mb-2" src="https://i.imgur.com/6Zo39CW.png" alt="">
+                    <h1 class="font-semibold text-lg">Booking Appointments</h1>
+                    <p class="text-sm text-center">Choose the best time for an in-person visit with our easy-to-use scheduling system, or proceed with our online consultation features.</p>
+                </div>
+            </div>
+            <div class="cards w-full">
+                <div class="brdr flex flex-col items-center px-4 py-4 shadow-2xl gap-2 rounded-2xl">
+                    <img class="w-12 h-12 mb-2" src="https://i.imgur.com/mgGGZiG.png" alt="">
+                    <h1 class="font-semibold text-lg">Online Consultations</h1>
+                    <p class="text-sm text-center">Receive and renew prescriptions digitally after your consultation with our specialists.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="flex flex-col items-center px-4 py-8">
+        <div class="brdr flex flex-col gap-5 w-full py-8 px-4 rounded-2xl shadow-md">
+            <div class="flex flex-col items-center gap-1 mb-2">
+                <p class="abt-text text-xl font-bold">DOCDIRECT:</p>
+                <p class="text-xl font-bold">Get to know us</p>
+            </div>
+            <img class="w-50 h-auto mx-auto mb-4" src="https://i.imgur.com/F3RPRvr.png" alt="">
+            <p class="text-xl text-center mb-4">DOCDIRECT is more than an online medical service—it's a step toward accessible, efficient, and compassionate healthcare for all. Founded by visionary doctors, healthcare professionals, and tech experts, our mission is to bring exceptional care directly to you, wherever you are. Built on trust, innovation, and patient-centricity, our platform ensures personalized interactions and tailored treatment plans. With a diverse network of licensed practitioners, comprehensive care is always just a click away.</p>
+            <button class="abt-btn h-12 w-full rounded-2xl text-base font-bold">Learn more about us</button>
+        </div>
+    </div>
+</div>
+

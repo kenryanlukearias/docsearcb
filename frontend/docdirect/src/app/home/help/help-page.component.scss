@@ -1,0 +1,14 @@
+.text-gradient {
+    background: linear-gradient(90deg, #66B8E0, 30%, #037AB4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    background-color: #00A4F4;
+}
+
+button:hover {
+    background-color: #007BB5;
+    transition: background-color 0.3s ease-in-out;
+}

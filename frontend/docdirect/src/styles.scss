@@ -18,10 +18,6 @@
     --success-color: #52c41a;
 }
 
-li:hover, button:hover {
-    cursor: pointer;
-}
-
 * {
       font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -30,5 +26,5 @@ li:hover, button:hover {
     border: 0;
     margin: 0;
     padding: 0;
-    background-color: #F6FBFF;
+    // background-color: #F6FBFF;
 }
