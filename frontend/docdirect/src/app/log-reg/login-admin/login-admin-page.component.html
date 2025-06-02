@@ -1,17 +1,18 @@
+<!-- Main container with full screen height and white background -->
 <div class="h-screen lg:overflow-hidden bg-white">
-  <!-- Logo -->
+  <!-- Logo section at the top left -->
   <div class="absolute top-6 left-6 flex items-center space-x-2 z-10">
     <img class="w-[4rem] h-[4rem]" src="https://i.imgur.com/WVJnWqs.png" alt="Logo" />
     <h1 class="text-[1.5rem] font-bold text-[#4db8ff]">DOCDIRECT</h1>
   </div>
 
-  <!-- Main Content -->
+  <!-- Main content centered horizontally and vertically -->
   <div class="flex h-full items-center justify-center px-8">
     <div class="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl gap-12">
 
-      <!-- Left Section -->
+      <!-- Left Section: Marketing message -->
       <div class="flex-1 mt-80 lg:mt-0">
-        <h1 class=" text-4xl lg:text-6xl  font-semibold text-gray-900 leading-tight">
+        <h1 class="text-4xl lg:text-6xl  font-semibold text-gray-900 leading-tight">
           Your <span class="text-gradient font-bold">trusted partner</span><br />
           in digital healthcare.
         </h1>
@@ -23,19 +24,23 @@
         </p>
       </div>
 
-      <!-- Right Section -->
+      <!-- Right Section: Admin login form -->
       <div class="flex-1 flex flex-col items-center justify-center">
-        <!-- Patient Login -->
+        <!-- Login form card -->
         <div class="bg-[#4AADDD] p-8 rounded-xl w-80 shadow-lg">
           <h2 class="text-center text-xl font-semibold mb-6 text-gray-800">Admin</h2>
+          <!-- Email input -->
           <label class="block text-sm mb-1 text-gray-700">Email Address :</label>
           <input type="email" placeholder="Enter Your Email Address" class="w-full p-2 mb-4 rounded border" />
+          <!-- Password input -->
           <label class="block text-sm mb-1 text-gray-700">Password :</label>
           <input type="password" placeholder="Enter Your Password" class="w-full p-2 mb-6 rounded border" />
-          <button class="w-full bg-gray-800 text-white py-2 rounded shadow hover:bg-gray-700 transition">
+          <!-- Login button -->
+          <button routerLink="/admin-page" class="w-full bg-gray-800 text-white py-2 rounded shadow hover:bg-gray-700 transition">
             Login
           </button>
         </div>
+        <!-- Additional links and navigation -->
         <div class="mb-10 text-center">
           <p class="mt-4 text-sm text-gray-600">
             Don't have an account?
@@ -48,6 +53,7 @@
             <span class="text-[#4db8ff] font-semibold underline hover:text-[#0077b6] transition cursor-pointer"
             routerLink="/user-login">User Login</span>
         </p>
+        <!-- Go to Home button -->
         <button 
           class="mt-6 w-56 bg-[#4db8ff] text-white py-2 rounded shadow hover:bg-[#0077b6] transition"
           routerLink="/"
